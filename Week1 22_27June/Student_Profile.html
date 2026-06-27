@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#dfe0d6;
+    color:#333;
+}
+
+header{
+    background:#14cc00;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:20px auto;
+}
+
+section{
+    background:rgba(238, 225, 225, 0.808);
+    padding:50px;
+    margin-bottom:20px;
+    border-radius:1px;
+    box-shadow:0 0 8px rgba(37, 37, 37, 0.2);
+}
+
+h2{
+    color:#00ccc9;
+    margin-bottom:15px;
+}
+
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    width:180px;
+    height:180px;
+    border-radius:70%;
+    border:4px solid #050c11;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid #333;
+}
+
+th{
+    background:#cc2c00;
+    color:white;
+}
+
+th, td{
+    padding:10px;
+    text-align:center;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input, textarea{
+    margin-bottom:15px;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#2900cc;
+    color:white;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#005fa3;
+}
+
+audio, video{
+    width:100%;
+    margin-top:10px;
+}
+
+footer{
+    background:#0077cc;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Vinit Morankar</h1>
+    <p>Student Profile Website</p>
+</header>
+
+<div class="container">
+
+    <!-- Profile Image -->
+    <section class="profile">
+        <h2>Profile Image</h2>
+        <img src="profile.png" alt="Profile Image">
+    </section>
+
+    <!-- About -->
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Hello! I am  <b>Vinit Morankar</b>. I am a Engineer student.
+            I have completed my Degree from Ajeenkya DY Patil School of Engineering, Pune
+            I am Hardworking and flexible working student and looking for opportunity where I can apply my skills.
+        </p>
+    </section>
+
+    <!-- Audio -->
+    <section>
+        <h2>iPhone ringtone audio</h2>
+        <audio controls>
+            <source src="ringtone.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+    </section>
+
+    <!-- Video -->
+    <section>
+        <h2>Rohit Sharma getting Padma-shri-Award </h2>
+        <video controls height="500" >
+            <source src="Rohit_Sharma.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </section>
+
+    <!-- Education Table -->
+    <section>
+        <h2>Educational Qualifications</h2>
+
+        <table>
+            <tr>
+                <th>Qualification</th>
+                <th>College/School</th>
+                <th>Year</th>
+                <th>Percentage/CGPA</th>
+            </tr>
+
+            <tr>
+                <td>SSC</td>
+                <td>Shreemoti Vidyamandir Taloda</td>
+                <td>2020</td>
+                <td>93.60%</td>
+            </tr>
+
+            <tr>
+                <td>Diploma in Computer Engineering</td>
+                <td>Government Polytechnic Jalgaon</td>
+                <td>2023</td>
+                <td>85.66%</td>
+            </tr>
+
+            <tr>
+                <td>BE Computer</td>
+                <td>Ajeenkya DY Patil School of engineering</td>
+                <td>2026</td>
+                <td>9.19 CGPA</td>
+            </tr>
+
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+
+        <form method="#">
+
+            <input type="text" placeholder="Enter Name" required>
+
+            <input type="email" placeholder="Enter Email" required>
+
+            <input type="tel" placeholder="Enter Mobile Number" required>
+
+            <textarea rows="5" placeholder="Enter Message"></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 Vinit Morankar Profile Website
+</footer>
+
+</body>
+</html>
