@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+  <form action="" name="userdata">
+    <label for="name">Name:</label><input id="name" name="username" type="text">
+    <label for="password">Password:</label><input id="password" name="userpsw" type="password" >
+  <button  onclick="validate()">click</button>
+  </form>
+  <script>
+   function validate(e){
+    let name=document.userdata.username.value;
+    // let nameid=document.getElementById('name').value;
+    let password=document.userdata.userpsw.value;
+    if(name=="" || name==null|| !isNaN(name)){
+      //     isnan(1234)==>false==>true   isnan("vishnu")
+      alert("enter the name");
+              e.preventDefault(); 
+    }else if(password.length<6){
+      alert("enter atleast 6 letters")
+      e.preventDefault();
+    }
+   }
+  </script>
+</body>
+</html>
