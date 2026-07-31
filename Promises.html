@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let promise1 = new Promise((resolve, reject) => {
+    setTimeout(() => reject("success1"), 10000);
+});
+
+let promise2 = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("success2"), 2000);
+});
+
+let promise3 = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("success3"), 3000);
+});
+
+Promise.race([promise1, promise2, promise3])
+ .then((res) => {
+     console.log("all success");
+ })
+ .catch((res) => {
+     console.log("failed");
+ });
+
+    </script>
+</body>
+</html>
