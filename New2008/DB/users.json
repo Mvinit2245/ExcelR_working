@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "no": "1",
+      "name": "vishnu",
+      "id": "XGgNJUp6GQk"
+    },
+    {
+      "no": "2",
+      "name": "vardhan",
+      "id": "HPvTnQ3ZKeA"
+    },
+    {
+      "no": "3",
+      "name": "mulaga",
+      "id": "mI5Vu3Ouc3s"
+    },
+    {
+      "no": "4",
+      "name": "sahana",
+      "id": "x3W-1fTq3nw"
+    },
+    {
+      "no": "6",
+      "name": "deva",
+      "id": "0j7xrf9N130"
+    },
+    {
+      "no": "8",
+      "name": "rahul",
+      "id": "VA-0L36azU4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
